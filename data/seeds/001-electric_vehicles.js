@@ -3,7 +3,6 @@
  * @returns { Promise<void> } 
  */
 exports.seed = async function (knex) {
-  // Deletes ALL existing entries
   return knex('electric_vehicles')
     .truncate()
     .then(function () {
