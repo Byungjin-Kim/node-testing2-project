@@ -5,7 +5,6 @@
 exports.up = function (knex) {
     return knex.schema.createTable('electric_vehicles', tbl => {
         tbl.increments();
-
         tbl.string('vehicles_name', 255).notNullable();
     });
 };
